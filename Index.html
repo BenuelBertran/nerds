@@ -8,94 +8,94 @@
          <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-        <header class="header main-header">
-            <div class="header-wrapper container">
+        <header class="main-header">
+            <div class="main-header__wrapper container">
                 <nav class="main-navigation">
-                    <a class="main-navigation-logo" href="#">
+                    <a class="main-navigation__logo" href="#">
                         <img src="img/navigation-logo.svg" alt="Логотип web-студии Nёrd's" width="160" height="65">
                     </a>
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="studio.html">Студия</a>
+                    <ul class="list menu">
+                        <li>
+                            <a class="main-navigation__link" href="studio.html">Студия</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="clients.html">Клиенты</a>
+                        <li>
+                            <a class="main-navigation__link" href="clients.html">Клиенты</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="catalog.html">Магазин</a>
+                        <li>
+                            <a class="main-navigation__link" href="catalog.html">Магазин</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="contacts.html">Контакты</a>
+                        <li>
+                            <a class="main-navigation__link" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="basket">
+                    <ul class="list basket">
                        <li>
-                            <a href="basket.html">Корзина</a>
+                            <a class="main-navigation__link basket__link" href="basket.html">Корзина</a>
                        </li>
                     </ul>
                 </nav>
-                <h1 class="visually-hidden">Дизайн-студия Nёrd's</h1>
+                <h1 class="title visually-hidden">Дизайн-студия Nёrd's</h1>
                 <section class="slider">
-                    <h2 class="visually-hidden">Наши преимущества</h2>
-                    <ul class="slide-list">
-                        <li class="slide slide-first">
-                            <div class="slide-info">
-                                <p class="slide-tagline">
+                    <h2 class="title visually-hidden">Наши преимущества</h2>
+                    <ul class="list">
+                        <li class="slider__item js-slider__first">
+                            <div class="slider__info-wrapper">
+                                <p class="paragraph slider__info-title">
                                     Долго, дорого,<br>
                                     скрупулезно.
                                 </p>
-                                <p class="slide-description">
+                                <p class="paragraph slider__info-description">
                                     Математически выверенный дизайн<br>
                                     для вашего сайта или мобильного приложения.
                                 </p>
-                                <a class="button slider-button" href="#">Узнать больше</a>
+                                <a class="button slider__info-button" href="#">Узнать больше</a>
                             </div>
-                            <img class="first-image" src="img/slider-image1.png" width="698" height="413" alt="Мобильные телефоны">
+                            <img class="slider__first-image" src="img/slider-image1.png" width="698" height="413" alt="Мобильные телефоны">
                         </li>
-                        <li class="slide slide-second hidden">
-                            <div class="slide-info">
-                                <p class="slide-tagline">
+                        <li class="slider__item js-slider__second js-slider-hidden">
+                            <div class="slider__info-wrapper">
+                                <p class="paragraph slider__info-title">
                                     Любим математику<br>
                                     как никто другой
                                 </p>
-                                <p class="slide-description">
+                                <p class="paragraph slider__info-description">
                                     Никакого креатива, только математические формулы<br>
                                     для расчета идеальных пропорций.
                                 </p>
-                                <a class="button slider-button" href="#">Узнать больше</a>
+                                <a class="button slider__info-button" href="#">Узнать больше</a>
                             </div>
-                            <img class="second-image" src="img/slider-image2.png" width="663" height="430" alt="Компьютерные мониторы">
+                            <img class="slider__second-image" src="img/slider-image2.png" width="663" height="430" alt="Компьютерные мониторы">
                         </li>
-                        <li class="slide slide-third hidden">
-                            <div class="slide-info">
-                                <p class="slide-tagline">
+                        <li class="slider__item js-slider__third js-slider-hidden">
+                            <div class="slider__info-wrapper">
+                                <p class="paragraph slider__info-title">
                                     Только ночь,<br>
                                     только хардкор
                                 </p>
-                                <p class="slide-description">
+                                <p class="paragraph slider__info-description">
                                     Работать днем, как все? Мы против этого.<br>
                                     Ближе к полуночи работа только начинается.
                                 </p>
-                                <a class="button slider-button" href="#">Узнать больше</a>
+                                <a class="button slider__info-button" href="#">Узнать больше</a>
                             </div>
-                            <img class="third-image" src="img/slider-image3.png" width="759" height="411" alt="Цифровые планшеты">
+                            <img class="slider__third-image" src="img/slider-image3.png" width="759" height="411" alt="Цифровые планшеты">
                         </li>
                     </ul>
-                    <ul class="controls-list">
+                    <ul class="list controls">
                         <li>
-                            <button class="controls-item control-1 current" type="button" aria-label="Первый слайд"></button>
+                            <button class="controls__item controls__item--current js-controls__first" type="button" aria-label="Первый слайд"></button>
                         </li>
                         <li>
-                            <button class="controls-item control-2" type="button" aria-label="Второй слайд"></button>
+                            <button class="controls__item js-controls__second" type="button" aria-label="Второй слайд"></button>
                         </li>
                         <li>
-                            <button class="controls-item control-3" type="button" aria-label="Третий слайд"></button>
+                            <button class="controls__item js-controls__third" type="button" aria-label="Третий слайд"></button>
                         </li>
                     </ul>
                 </section>
             </div>
         </header>
-        <main class="main-page container">
+        <main class="index-page container">
             <section class="services">
                 <h2 class="visually-hidden">Наши услуги</h2>
                 <ul class="services-list">

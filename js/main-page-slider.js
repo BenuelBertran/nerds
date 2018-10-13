@@ -1,86 +1,43 @@
 // Список переменных
 
-var first_control = document.querySelector(".control-1");
-var second_control = document.querySelector(".control-2");
-var third_control = document.querySelector(".control-3");
-var first_slide = document.querySelector(".slide-first");
-var second_slide = document.querySelector(".slide-second");
-var third_slide = document.querySelector(".slide-third");
+var first_control = document.querySelector(".js-controls__first");
+var second_control = document.querySelector(".js-controls__second");
+var third_control = document.querySelector(".js-controls__third");
+var first_slide = document.querySelector(".js-slider__first");
+var second_slide = document.querySelector(".js-slider__second");
+var third_slide = document.querySelector(".js-slider__third");
 
-// Смена слайдеров при переключении контролов
+// Смена слайдов при переключении контролов
 
 first_control.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (first_slide.classList.contains("hidden")) {
-        first_slide.classList.remove("hidden");
-    }
-    if (!second_slide.classList.contains("hidden")) {
-        second_slide.classList.add("hidden");
-    }
-    if (!third_slide.classList.contains("hidden")) {
-        third_slide.classList.add("hidden");
-    }
-    
-    // смена активного контрола
-    
-    if (!first_control.classList.contains("current")) {
-        first_control.classList.add("current");
-    }
-    if (second_control.classList.contains("current")) {
-        second_control.classList.remove("current");
-    }
-    if (third_control.classList.contains("current")) {
-        third_control.classList.remove("current");
-    }
+    first_slide.classList.remove("js-slider-hidden"); 
+    second_slide.classList.add("js-slider-hidden");
+    third_slide.classList.add("js-slider-hidden");
+
+    first_control.classList.add("controls__item--current");
+    second_control.classList.remove("controls__item--current");
+    third_control.classList.remove("controls__item--current");
 });
 
 second_control.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (second_slide.classList.contains("hidden")) {
-        second_slide.classList.remove("hidden");
-    }
-    if (!first_slide.classList.contains("hidden")) {
-        first_slide.classList.add("hidden");
-    }
-    if (!third_slide.classList.contains("hidden")) {
-        third_slide.classList.add("hidden");
-    }
-    
-    // смена активного контрола
-    
-    if (!second_control.classList.contains("current")) {
-        second_control.classList.add("current");
-    }
-    if (first_control.classList.contains("current")) {
-        first_control.classList.remove("current");
-    }
-    if (third_control.classList.contains("current")) {
-        third_control.classList.remove("current");
-    }
+    second_slide.classList.remove("js-slider-hidden"); 
+    first_slide.classList.add("js-slider-hidden");
+    third_slide.classList.add("js-slider-hidden");
+
+    second_control.classList.add("controls__item--current");
+    first_control.classList.remove("controls__item--current");
+    third_control.classList.remove("controls__item--current");
 });
 
 third_control.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (third_slide.classList.contains("hidden")) {
-        third_slide.classList.remove("hidden");
-    }
-    if (!first_slide.classList.contains("hidden")) {
-        first_slide.classList.add("hidden");
-    }
-    if (!second_slide.classList.contains("hidden")) {
-        second_slide.classList.add("hidden");
-    }
-    
-    // смена активного контрола
-    
-    if (!third_control.classList.contains("current")) {
-        third_control.classList.add("current");
-    }
-    if (first_control.classList.contains("current")) {
-        first_control.classList.remove("current");
-    }
-    if (second_control.classList.contains("current")) {
-        second_control.classList.remove("current");
-    }
-});
+    third_slide.classList.remove("js-slider-hidden"); 
+    first_slide.classList.add("js-slider-hidden");
+    second_slide.classList.add("js-slider-hidden");
 
+    third_control.classList.add("controls__item--current");
+    first_control.classList.remove("controls__item--current");
+    second_control.classList.remove("controls__item--current");
+});

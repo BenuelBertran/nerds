@@ -144,9 +144,9 @@ img {
 .main-navigation__link--current::before {
     position: absolute;
     content: "";
-    top: 30px;
-    left: 1px;
-    right: 1px;
+    bottom: 4px;
+    left: 24px;
+    right: 24px;
     
     height: 2px;
     
@@ -769,8 +769,6 @@ img {
 .catalog-page__wrapper {
     display: flex;
     justify-content: space-between;
-    
-    
 }
 
 .filters {
@@ -779,13 +777,15 @@ img {
     outline: 2px dashed yellow;
 }
 
-.filters fieldset {
+.filters__group {
     margin: 0;
-    padding: 0;
     border: none;
+    padding: 0;
 }
 
-.filters legend {
+.filters__title {
+    margin-bottom: 16px;
+    
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -793,47 +793,20 @@ img {
     text-transform: uppercase;
 }
 
-.filters ul {
-    margin: 0;
-    padding: 0;
-    
-    list-style: none;
-}
-
-.filters li  {
-    margin-left: 36px;
-    margin-bottom: 20px;
-    
-    line-height: 20px;
-}
-
-.filters li label {
-    position: relative;
-    cursor: pointer;
-}
-
-.filters li input:focus + label::before,
-.filters-features input:focus + label::after {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;    
-}
-
-.filters-worth legend {
+.filters .worth__title {
     letter-spacing: 1px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
 }
 
-.filters-worth .range {
+.filters .worth__slider {
     width: 260px;
     height: 80px;
     margin-bottom: 13px;
     
     background-color: #eeeeee;
-    background-position: 0 0;
-    background-repeat: repeat;
 }
 
-.filters-worth .bar {
+.filters .worth__bar {
     position: relative;
     top: -48px;
     left: 21px;
@@ -845,7 +818,7 @@ img {
     background-color: #d7dcde;
 }
 
-.filters-worth .bar-progress {
+.filters .worth__bar-progress {
     position: absolute;
     content: "";
     
@@ -855,7 +828,7 @@ img {
     background-color: #00ca74;
 }
 
-.filters-worth .bar-progress::before {
+.filters .worth__bar-progress::before {
     position: absolute;
     content: "";
     top: -9px;
@@ -863,15 +836,16 @@ img {
     
     width: 4px;
     height: 4px;
-    
     border: 8px solid #ffffff;
     border-radius: 50%;
+    
     background-color: #ababab;
     box-shadow: 0 2px 1px #cfcfcf;
+    
     cursor: pointer;
 }
 
-.filters-worth .bar-progress::after {
+.filters .worth__bar-progress::after {
     position: absolute;
     content: "";
     top: -9px;
@@ -879,57 +853,61 @@ img {
     
     width: 4px;
     height: 4px;
-    
     border: 8px solid #ffffff;
     border-radius: 50%;
+    
     background-color: #ababab;
     box-shadow: 0 2px 1px #cfcfcf;
+    
     cursor: pointer;
 }
 
-.filters-worth .value {
+.filters .worth__value {
     margin-bottom: 54px;
-}
-
-.filters-worth label {
+    
     text-transform: uppercase;
 }
 
-.filters-worth input {
+.filters .worth__range {
     width: 80px;
-    padding-top: 9px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 7px;
+    border: none;
+    padding: 9px 5px 7px;
+    box-sizing: border-box;
     
     line-height: 22px;
     text-align: center;
     
-    border: none;
     background-color: #eeeeee;
-    box-sizing: border-box;
 }
 
-.filters-worth input[name="min"] {
+.filters .worth__range--min {
     margin-left: 12px;
     margin-right: 29px;
 }
 
-.filters-worth input[name="max"] {
+.filters .worth__range--max {
     margin-left: 11px;
 }
 
-.filters-net legend,
-.filters-features legend {
-    margin-bottom: 16px;
-}
-
-.filters-net ul {
+.net__list {
     margin-bottom: 45px;
 }
 
-.filters-net input[value="adoptive"] + label::before,
-.filters-net input[value="fixed"] + label::before {
+.filters__item  {
+    margin-left: 36px;
+    margin-bottom: 20px;
+    
+    line-height: 20px;
+}
+
+.filters__item-title {
+    position: relative;
+    
+    cursor: pointer;
+}
+
+.filters .net__item-adoptive + label::before,
+.filters .net__item-fixed + label::before {
     position: absolute;
     content: "";
     
@@ -942,8 +920,8 @@ img {
     border: 4px solid #a6a6a6;
 }
 
-.filters-net input[value="adoptive"]:checked + label::after,
-.filters-net input[value="fixed"]:checked + label::after {
+.filters .net__item-adoptive:checked + label::after,
+.filters .net__item-fixed:checked + label::after {
     position: absolute;
     content: "";
     
@@ -1019,8 +997,9 @@ img {
     opacity: 1;
 }
 
-.filters input[disabled] + label {
+.filters__item-option:disabled + label {
     opacity: 0.3;
+    
     cursor: default;
 }
 

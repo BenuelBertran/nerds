@@ -40,60 +40,60 @@
         <main class="catalog-page container">
             <div class="catalog-page__wrapper">
                 <section class="filters">
-                    <h2 class="visually-hidden">Фильтры параметров</h2>
-                    <form class="filters-list" action="https://echo.htmlacademy.ru" method="get">
-                        <fieldset class="filters-worth">
-                            <legend>Стоимость:</legend>
-                            <div class="range">
+                    <h2 class="title visually-hidden">Фильтры параметров</h2>
+                    <form action="https://echo.htmlacademy.ru" method="get">
+                        <fieldset class="filters__group worth">
+                            <legend class="filters__title worth__title">Стоимость:</legend>
+                            <div class="worth__slider">
                                 <img src="img/filter-range-slider-with-bar.jpg" width="260" height="80" alt="Диапазон стоимости шаблона">
-                                <div class="bar">
-                                    <div class="bar-progress"></div>
+                                <div class="worth__bar">
+                                    <div class="worth__bar-progress"></div>
                                 </div>
                             </div>
-                            <div class="value">
-                                <label>От<input type="text" name="min" value="0"></label>
-                                <label>До<input type="text" name="max" value="15 000"></label>
+                            <div class="worth__value">
+                                <label>От<input class="worth__range worth__range--min" type="text" name="min" value="0"></label>
+                                <label>До<input class="worth__range worth__range--max" type="text" name="max" value="15 000"></label>
                             </div>
                         </fieldset>
-                        <fieldset class="filters-net">
-                            <legend>Сетка:</legend>
-                            <ul class="net-list">
-                                <li class="net-item">
-                                    <input class="visually-hidden" type="radio" name="net" value="adoptive" id="net-adoptive" checked>
-                                    <label for="net-adoptive">Адаптивная</label>
+                        <fieldset class="filters__group net">
+                            <legend class="filters__title">Сетка:</legend>
+                            <ul class="list net__list">
+                                <li class="filters__item">
+                                    <input class="filters__item-option net__item-adoptive visually-hidden" type="radio" name="net" value="adoptive" id="net-adoptive" checked>
+                                    <label class="filters__item-title" for="net-adoptive">Адаптивная</label>
                                 </li>
-                                <li class="net-item">
-                                    <input class="visually-hidden" type="radio" name="net" value="fixed" id="net-fixed">
-                                    <label for="net-fixed">Фиксированная</label>
+                                <li class="filters__item">
+                                    <input class="filters__item-option net__item-fixed visually-hidden" type="radio" name="net" value="fixed" id="net-fixed">
+                                    <label class="filters__item-title" for="net-fixed">Фиксированная</label>
                                 </li>
-                                <li class="net-item">
-                                    <input class="visually-hidden" type="radio" name="net" value="rubber" id="net-rubber">
-                                    <label for="net-rubber">Резиновая</label>
+                                <li class="filters__item">
+                                    <input class="filters__item-option visually-hidden" type="radio" name="net" value="rubber" id="net-rubber">
+                                    <label class="filters__item-title" for="net-rubber">Резиновая</label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="filters-features">
-                            <legend>Особенности:</legend>
-                            <ul class="features-list">
-                                <li class="features-item">
-                                    <input class="visually-hidden" type="checkbox" name="slider" value="slider" id="features-slider" checked>
-                                    <label for="features-slider">Слайдер</label>
+                        <fieldset class="filters__group features">
+                            <legend class="filters__title">Особенности:</legend>
+                            <ul class="list features__list">
+                                <li class="filters__item">
+                                    <input class="filters__item-option visually-hidden" type="checkbox" name="slider" value="slider" id="features-slider" checked>
+                                    <label class="filters__item-title" for="features-slider">Слайдер</label>
                                 </li>
-                                <li class="features-item">
-                                    <input class="visually-hidden" type="checkbox" name="advantage" value="advantage" id="features-advantage">
-                                    <label for="features-advantage">Блок преимуществ</label>
+                                <li class="filters__item">
+                                    <input class="filters__item-option visually-hidden" type="checkbox" name="advantage" value="advantage" id="features-advantage">
+                                    <label class="filters__item-title" for="features-advantage">Блок преимуществ</label>
                                 </li>
-                                <li class="features-item">
-                                    <input class="visually-hidden" type="checkbox" name="news" value="news" id="features-news" checked>
-                                    <label for="features-news">Новости</label>
+                                <li class="filters__item">
+                                    <input class="filters__item-option visually-hidden" type="checkbox" name="news" value="news" id="features-news" checked>
+                                    <label class="filters__item-title" for="features-news">Новости</label>
                                 </li>
-                                <li class="features-item">
-                                    <input class="visually-hidden" type="checkbox" name="gallery" value="gallery" id="features-gallery">
-                                    <label for="features-gallery">Галерея</label>
+                                <li class="filters__item">
+                                    <input class="filters__item-option visually-hidden" type="checkbox" name="gallery" value="gallery" id="features-gallery">
+                                    <label class="filters__item-title" for="features-gallery">Галерея</label>
                                 </li>
-                                <li class="features-item">
-                                    <input class="visually-hidden" type="checkbox" name="basket" value="basket" id="features-basket">
-                                    <label for="features-basket">Корзина</label>
+                                <li class="filters__item">
+                                    <input class="filters__item-option visually-hidden" type="checkbox" name="basket" value="basket" id="features-basket">
+                                    <label class="filters__item-title" for="features-basket">Корзина</label>
                                 </li>
                             </ul>
                         </fieldset>

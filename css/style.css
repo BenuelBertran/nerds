@@ -787,6 +787,7 @@ img {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    word-break: break-word;
 }
 
 .filters .worth__title {
@@ -1029,8 +1030,9 @@ img {
 }
 
 .catalog__sort-title {
-    margin-right: auto;
     margin-top: 2px;
+    margin-right: 40px;
+    width: 360px;
     
     font-size: 18px;
     line-height: 18px;
@@ -1112,6 +1114,7 @@ img {
 .catalog__item-title {
     display: block;
     margin-bottom: 15px;
+    padding: 0 80px;
     
     font-size: 18px;
     line-height: 30px;

@@ -1,3 +1,8 @@
+/* jshint node: true */
+/* jshint browser: true */
+/* global window */
+"use strict";
+
 // Список переменных
 
 var first_control = document.querySelector(".js-controls__first");

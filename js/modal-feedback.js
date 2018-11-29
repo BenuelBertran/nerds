@@ -1,3 +1,8 @@
+/* jshint node: true */
+/* jshint browser: true */
+/* global window */
+"use strict";
+
 // Список переменных
 
 var feedback_link = document.querySelector(".js-contacts__info-button");

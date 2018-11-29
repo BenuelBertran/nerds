@@ -13,7 +13,7 @@
         url("../fonts/roboto-medium-500.woff") format("woff"),
         url("../fonts/roboto-medium-500.woff2") format("woff2");
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
 }
 
 @font-face {
@@ -22,5 +22,5 @@
         url("../fonts/roboto-bold-700.woff") format("woff"),
         url("../fonts/roboto-bold-700.woff2") format("woff2");
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }

@@ -3,8 +3,6 @@
 
 body {
     min-width: 1200px;
-    margin: 0;
-    padding: 0;
 
     font-family: "Roboto", "Calibri", sans-serif;
     font-size: 16px;
@@ -904,7 +902,8 @@ img {
 }
 
 .filters__item-option:hover + label,
-.filters__item-option:focus + label {
+.filters__item-option:focus + label,
+.filters__item-option:checked + label {
     color: #000000;
 }
 
@@ -943,12 +942,14 @@ img {
 }
 
 .filters .net__item-option:hover + label::before,
-.filters .net__item-option:focus + label::before {
+.filters .net__item-option:focus + label::before,
+.filters .net__item-option:checked + label::before {
     border-color: #000000;
 }
 
 .filters .net__item-option:checked:hover + label::after,
-.filters .net__item-option:checked:focus + label::after {
+.filters .net__item-option:checked:focus + label::after,
+.filters .net__item-option:checked + label::after {
     background-color: #000000;
 }
 
@@ -983,13 +984,15 @@ img {
 }
 
 .filters .features__item-option:hover + label::before,
-.filters .features__item-option:focus + label::before {
+.filters .features__item-option:focus + label::before,
+.filters .features__item-option:checked + label::before {
     background-image: url(../img/filter-checkbox-off-black.svg);
     opacity: 1;
 }
 
 .filters .features__item-option:hover + label::after,
-.filters .features__item-option:focus + label::after {
+.filters .features__item-option:focus + label::after,
+.filters .features__item-option:checked + label::after {
     background-image: url(../img/filter-checkbox-on-black.svg);
     opacity: 1;
 }

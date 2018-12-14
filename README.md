@@ -1,4 +1,5 @@
 # Техническое задание проекта Nerds
+https://benuelbertran.github.io/nerds/
 
 ## Общие технические требования
 
